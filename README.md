@@ -88,23 +88,23 @@ Alt-H2
 ⋅⋅1. Нумерованный вложенный список
 4. И еще один пункт.
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+⋅⋅⋅Внутри пунктов списка можно вставить абзацы с таким же отступом. Обратите внимание на пустую строку выше и на пробелы в начале (нужен по меньшей мере один, но здесь мы добавили три, чтобы также выровнять необработанный Markdown).
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+⋅⋅⋅Чтобы вставить разрыв строки, но не начинать новый параграф, нужно добавить два пробела перед новой строкой.⋅⋅
+⋅⋅⋅Эта текст начинается с новой строки, но находится в том же абзаце.⋅⋅
+⋅⋅⋅(В некоторых обработчиках, например на Github, пробелы в начале новой строки не нужны.)
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* Ненумерованный список можно размечать звездочками
+- Или минусами
++ Или плюсами
 ```
 
-1. First ordered list item
-2. Another item
-  * Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-  1. Ordered sub-list
-4. And another item.
+1. Первый пункт нумерованного списка
+2. Второй пункт
+  * Ненумерованный вложенный список.
+1. Сами числа не имеют значения, лишь бы это были цифры
+  1. Нумерованный вложенный список
+4. И еще один пункт.
 
    Внутри пунктов списка можно вставить абзацы с таким же отступом. Обратите внимание на пустую строку выше и на пробелы в начале (нужен по меньшей мере один, но здесь мы добавили три, чтобы также выровнять необработанный Markdown).
 
@@ -162,116 +162,116 @@ Alt-H2
 (*) Для символов не входящих в ASCII, например кириллицы, текст сноски все-таки регистрозависим (прим. перев.)
 
 <a name="images"/>
-## Images
+## Изображения
 
 ```no-highlight
-Here's our logo (hover to see the title text):
+Вот наш логотип (наведите указатель, чтобы увидеть текст заголовка):
 
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Код в строке: 
+![alt-текст](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 1")
 
 Reference-style: 
-![alt text][logo]
+![alt-текст][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 2"
 ```
 
-Here's our logo (hover to see the title text):
+Вот наш логотип (наведите указатель, чтобы увидеть текст заголовка):
 
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Адрес в строке: 
+![alt-текст](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 1")
 
-Reference-style: 
-![alt text][logo]
+Адрес в ссылке: 
+![alt-текст][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 2"
 
 <a name="code"/>
-## Code and Syntax Highlighting
+## Код и подсветка синтаксиса
 
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+Блоки кода являются частью функций Markdown, но не подсветка синтаксиса. Однако многие обработчики, например Github или *Markdown Here*, поддерживают подсветку синтаксиса. Список поддерживаемых языков и способ их указания может различаться. *Markdown Here* поддерживает десятки языков (и не-языков, например синтаксис diff и заголовки HTTP); полный список и способ указания языков см. на странице [highlight.js demo-странице](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
 ```no-highlight
-Inline `code` has `back-ticks around` it.
+`Код` в строке обрамляется `обратными апострофами`.
 ```
 
-Inline `code` has `back-ticks around` it.
+`Код` в строке обрамляется `обратными апострофами`.
 
-Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
+Блоки кода выделяются либо тремя обратными апострофами <code>```</code> либо четырьмя пробелами в каждой строке. Рекомендуется использовать три апострофа -- они проще и только они поддерживают подсветку синтаксиса.
 
 <pre lang="no-highlight"><code>```javascript
-var s = "JavaScript syntax highlighting";
+var s = "Подсветка JavaScript";
 alert(s);
 ```
  
 ```python
-s = "Python syntax highlighting"
+s = "Подсветка Python"
 print s
 ```
  
 ```
-No language indicated, so no syntax highlighting. 
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+Язык не указан, синтаксис не подсвечен.
+Но мы вставим его в &lt;b&gt;тег&lt;/b&gt;.
 ```
 </code></pre>
 
 
 
 ```javascript
-var s = "JavaScript syntax highlighting";
+var s = "Подсветка JavaScript";
 alert(s);
 ```
-
+ 
 ```python
-s = "Python syntax highlighting"
+s = "Подсветка Python"
 print s
 ```
 
 ```
-No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
-But let's throw in a <b>tag</b>.
+Язык не указан, синтаксис не подсвечен (некоторые обработчики все же подсвечивают).
+Но мы вставим его в <b>тег</b>.
 ```
 
 
 <a name="tables"/>
-## Tables
+## Таблицы
 
-Tables aren't part of the core Markdown spec, but they are part of GFM and *Markdown Here* supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
+Таблицы не являются частью Markdown, но многие обработчики, например *Markdown Here* и Github, поддерживают их. Они позволяют легко добавить таблицы в электронное письмо -- в других случаях для этого нужно копировать их из другого приложения.
 
 ```no-highlight
-Colons can be used to align columns.
+Вертикальные линии обозначают столбцы.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Таблицы       | Это                | Круто |
+| ------------- |:------------------:| -----:|
+| столбец 3     | выровнен вправо    | $1600 |
+| столбец 2     | выровнен по центру |   $12 |
+| зебра-строки  | прикольные         |    $1 |
 
-The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+Внешние вертикальные линии (|) не обязательны, и они нужны только чтобы сам код Markdown выглядел красиво. Тот же код можно записать так:
 
-Markdown | Less | Pretty
+Markdown | не такой | красивый
 --- | --- | ---
-*Still* | `renders` | **nicely**
+*Но выводится* | `так же` | **клево**
 1 | 2 | 3
 ```
 
-Colons can be used to align columns.
+Вертикальные линии обозначают столбцы.
 
-| Tables        | Are           | Cool |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Таблицы       | Это                | Круто |
+| ------------- |:------------------:| -----:|
+| столбец 3     | выровнен вправо    | $1600 |
+| столбец 2     | выровнен по центру |   $12 |
+| зебра-строки  | клевые             |    $1 |
 
-The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+Внешние вертикальные линии (|) не обязательны, и они нужны только чтобы сам код Markdown выглядел красиво. Тот же код можно записать так:
 
-Markdown | Less | Pretty
+Markdown | не такой | красивый
 --- | --- | ---
-*Still* | `renders` | **nicely**
+*Но выводится* | `так же` | **клево**
 1 | 2 | 3
 
 <a name="blockquotes"/>
-## Blockquotes
+## Цитаты
 
 ```no-highlight
 > Blockquotes are very handy in email to emulate reply text.
