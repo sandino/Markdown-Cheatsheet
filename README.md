@@ -1,22 +1,22 @@
-This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
+Шпаргалка по Markdown
 
-Note that there is also a [Cheatsheet specific to Markdown Here](./Markdown-Here-Cheatsheet) if that's what you're looking for.
+(перевод, [оригинал](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
 
-PLEASE DO NOT EDIT THIS PAGE! You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
+Поиграть с разметкой Markdown можно на [демо-странице](http://www.markdown-here.com/livedemo.html).
 
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-[Lists](#lists)  
-[Links](#links)  
-[Images](#images)  
-[Code and Syntax Highlighting](#code)  
-[Tables](#tables)  
-[Blockquotes](#blockquotes)  
-[Inline HTML](#html)  
-[Horizontal Rule](#hr)  
-[Line Breaks](#lines)  
-[Youtube videos](#videos)  
+##### Содержание  
+[Заголовки](#headers)  
+[Оформление](#emphasis)  
+[Списки](#lists)  
+[Ссылки](#links)  
+[Изображения](#images)  
+[Подсветка кода и синтаксиса](#code)  
+[Таблицы](#tables)  
+[Цитаты](#blockquotes)  
+[Встроенный HTML](#html)  
+[Горизонтальная линия](#hr)  
+[Разрыв строки](#lines)  
+[Видео Youtube](#videos)  
 
 <a name="headers"/>
 ## Headers
