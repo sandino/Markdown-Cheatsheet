@@ -106,58 +106,58 @@ Alt-H2
   1. Ordered sub-list
 4. And another item.
 
-   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+   Внутри пунктов списка можно вставить абзацы с таким же отступом. Обратите внимание на пустую строку выше и на пробелы в начале (нужен по меньшей мере один, но здесь мы добавили три, чтобы также выровнять необработанный Markdown).
 
-   To have a line break without a paragraph, you will need to use two trailing spaces.  
-   Note that this line is separate, but within the same paragraph.  
-   (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+   Чтобы вставить разрыв строки, но не начинать новый параграф, нужно добавить два пробела перед новой строкой.
+   Эта текст начинается с новой строки, но находится в том же абзаце.
+   (В некоторых обработчиках, например на Github, пробелы в начале новой строки не нужны.)
 
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* Ненумерованный список можно размечать звездочками
+- Или минусами
++ Или плюсами
 
 <a name="links"/>
-## Links
+## Ссылки
 
-There are two ways to create links.
+Ссылки можно размечать двумя способами.
 
 ```no-highlight
-[I'm an inline-style link](https://www.google.com)
+[Обычная ссылка в строке](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[Обычная ссылка с title](https://www.google.com "Сайт Google")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[Ссылка со сноской][Произвольный регистронезависимый текст]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[Относительная ссылка на документ](../blob/master/LICENSE)
 
-[You can use numbers for reference-style link definitions][1]
+[Для ссылок со сноской можно использовать цифры][1]
 
-Or leave it empty and use the [link text itself]
+Или можно просто вставить ссылку в квадратные скобки [текст ссылки]
 
-Some text to show that the reference links can follow later.
+Примечание, что ссылки могут быть указаны ниже.
 
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[произвольный регистронезависимый текст]: https://www.mozilla.org
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+[текст ссылки]: http://www.reddit.com
 ```
 
-[I'm an inline-style link](https://www.google.com)
+[Обычная ссылка в строке](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[Обычная ссылка с title](https://www.google.com "Сайт Google")
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[Ссылка со сноской][Произвольный регистронезависимый текст]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[Относительная ссылка на документ](../blob/master/LICENSE)
 
-[You can use numbers for reference-style link definitions][1]
+[Для ссылок со сноской можно использовать цифры][1]
 
-Or leave it empty and use the [link text itself]
+Или можно просто вставить ссылку в квадратные скобки [текст ссылки]
 
-Some text to show that the reference links can follow later.
+Примечание, что ссылки могут быть указаны ниже.
 
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[произвольный регистронезависимый текст]: https://www.mozilla.org
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+[текст ссылки]: http://www.reddit.com
 
 <a name="images"/>
 ## Images
