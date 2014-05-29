@@ -6,7 +6,7 @@
 
 ##### Содержание  
 [Заголовки](#headers)  
-[Оформление](#emphasis)  
+[Выделение](#emphasis)  
 [Списки](#lists)  
 [Ссылки](#links)  
 [Изображения](#images)  
@@ -19,7 +19,7 @@
 [Видео Youtube](#videos)  
 
 <a name="headers"/>
-## Headers
+## Заголовки
 
 ```no-highlight
 # H1
@@ -29,7 +29,7 @@
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+Кроме того, H1 и H2 можно обозначить подчеркиванием:
 
 Alt-H1
 ======
@@ -45,7 +45,7 @@ Alt-H2
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+Кроме того, заголовки H1 и H2 можно обозначить подчеркиванием:
 
 Alt-H1
 ======
@@ -54,39 +54,39 @@ Alt-H2
 ------
 
 <a name="emphasis"/>
-## Emphasis
+## Выделение
 
 ```no-highlight
-Emphasis, aka italics, with *asterisks* or _underscores_.
+Курсив обозначается *звездочками* или _подчеркиванием_.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Полужирный шрифт - двойными **звездочками** или __подчеркиванием__.
 
-Combined emphasis with **asterisks and _underscores_**.
+Комбинированное выделение **звездочками и _подчеркиванием_**.
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+Для зачеркнутого текста используются две тильды . ~~Уберите это.~~
 ```
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+Курсив обозначается *звездочками* или _подчеркиванием_.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Полужирный шрифт - двойными **звездочками** или __подчеркиванием__.
 
-Combined emphasis with **asterisks and _underscores_**.
+Комбинированное выделение **звездочками и _подчеркиванием_**.
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+Для зачеркнутого текста используются две тильды . ~~Уберите это.~~
 
 
 <a name="lists"/>
-## Lists
+## Списки
 
-(In this example, leading and trailing spaces are shown with with dots: ⋅)
+(В данном примере предшествующие и завершающие пробелы обозначены точками: ⋅)
 
 ```no-highlight
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
+1. Первый пункт нумерованного списка
+2. Второй пункт
+⋅⋅*Ненумерованный вложенный список.
+1. Сами числа не имеют значения, лишь бы это были цифры
+⋅⋅1. Нумерованный вложенный список
+4. И еще один пункт.
 
 ⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
