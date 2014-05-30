@@ -261,7 +261,7 @@ Markdown | не такой | красивый
 | ------------- |:------------------:| -----:|
 | столбец 3     | выровнен вправо    | $1600 |
 | столбец 2     | выровнен по центру |   $12 |
-| зебра-строки  | клевые             |    $1 |
+| зебра-строки  | прикольные         |    $1 |
 
 Внешние вертикальные линии (|) не обязательны, и они нужны только чтобы сам код Markdown выглядел красиво. Тот же код можно записать так:
 
@@ -274,117 +274,115 @@ Markdown | не такой | красивый
 ## Цитаты
 
 ```no-highlight
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
+> С помощью цитат очень удобно в письме обозначать исходный текст.
+> Эта строка - часть той же цитаты.
 
-Quote break.
+Разрыв цитаты.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+> Это очень длинная строка, но она будет правильно процитирована даже при размещении на нескольких строках. Продолжаем писать, чтобы эта строка не вмещалась на одной строке в любом окне. Кстати, в цитаты можно *вставлять* даже **Markdown**.
 ```
 
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
+> С помощью цитат очень удобно в письме обозначать исходный текст.
+> Эта строка - часть той же цитаты.
 
-Quote break.
+Разрыв цитаты.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+> Это очень длинная строка, но она будет правильно процитирована даже при размещении на нескольких строках. Продолжаем писать, чтобы эта строка не вмещалась на одной строке в любом окне. Кстати, в цитаты можно также *размечать* с помощью **Markdown**.
 
 <a name="html"/>
 ## Inline HTML
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well. 
+Часто Markdown понимает чистый HTML.
 
 ```no-highlight
 <dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+  <dt>Список определений</dt>
+  <dd>Это то, что люди иногда используют.</dd>
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  <dt>Markdown внутри HTML</dt>
+  <dd>Работает *не очень** хорошо. Используйте HTML-<em>теги</em>.</dd>
 </dl>
 ```
 
 <dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+  <dt>Список определений</dt>
+  <dd>Это то, что люди иногда используют.</dd>
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  <dt>Markdown внутри HTML</dt>
+  <dd>Работает *не очень** хорошо. Используйте HTML-<em>теги</em>.</dd>
 </dl>
 
 <a name="hr"/>
-## Horizontal Rule
+## Горизонтальные линии
 
 ```
-Three or more...
+Три и более...
 
 ---
 
-Hyphens
+Дефисы
 
 ***
 
-Asterisks
+Звездочки
 
 ___
 
-Underscores
+Подчеркивания
 ```
 
-Three or more...
+Три и более...
 
 ---
 
-Hyphens
+Дефисы
 
 ***
 
-Asterisks
+Звездочки
 
 ___
 
-Underscores
+Подчеркивания
 
 <a name="lines"/>
-## Line Breaks
+## Разрывы строк
 
-My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. 
+Для понимания работы разрыва строка автор главным образом рекомендует экспериментировать и пробовать -- нажмите &lt;Enter&gt; один раз (т.е. перейдите на новую строку), потом нажмите дважды (т.е. вставьте две новые строки) и посмотрите что приозошло. Вы сразу поймете что вам нужно. В дополнении для браузеров [Markdown Here](https://github.com/adam-p/markdown-here) есть удобная функция "Markdown Toggle", которая поможет в этом. 
 
-Here are some things to try out:
+Попробуйте ввести следующее:
 
 ```
-Here's a line for us to start with.
+Это начальная строка
 
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+Эта строка отделена от предыдущей двумя новыми строками и станет *отдельным абзацем*.
 
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+Это тоже отдельный абзац, но...
+Эта строка отделена одной новой строкой, поэтому она находится в *том же абзаце*.
 ```
 
-Here's a line for us to start with.
+Это начальная строка
 
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+Эта строка отделена от предыдущей двумя новыми строками и станет *отдельным абзацем*.
 
-This line is also begins a separate paragraph, but...  
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+Это тоже отдельный абзац, но...
+Эта строка отделена одной новой строкой, поэтому она находится в *том же абзаце*.
 
-(Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
+(Примечание: *Markdown Here* разрывы строк ведут себя так же, как в [GFM](https://help.github.com/articles/github-flavored-markdown), поэтому не нужно вставлять по две новые строки.)
 
 <a name="videos"/>
-## Youtube videos
+## Видео Youtube
 
-They can't be added directly but you can add an image with a link to the video like this:
-
-```no-highlight
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-```
-
-Or, in pure Markdown, but losing the image sizing and border:
+Ролики нельзя вставить напрямую, но может вставить изображение со ссылкой на видео, например:
 
 ```no-highlight
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ID_ВИДЕОРОЛИКА_НА_YOUTUBE" target="_blank"><img src="http://img.youtube.com/vi/ID_ВИДЕОРОЛИКА_НА_YOUTUBE/0.jpg" 
+alt="ALT-ТЕКСТ ИЗОБРАЖЕНИЯ" width="240" height="180" border="10" /></a>
 ```
 
-Referencing a bug by #bugID in your git commit links it to the slip. For example #1. 
+На чистом Markdown, но без размеров изображения и рамки:
+
+```no-highlight
+[![ALT-ТЕКСТ ИЗОБРАЖЕНИЯ](http://img.youtube.com/vi/ID_ВИДЕОРОЛИКА_НА_YOUTUBE/0.jpg)](http://www.youtube.com/watch?v=ID_ВИДЕОРОЛИКА_НА_YOUTUBE)
+```
+
