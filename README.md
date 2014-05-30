@@ -368,7 +368,7 @@ ___
 Это тоже отдельный абзац, но...
 Эта строка отделена одной новой строкой, поэтому она находится в *том же абзаце*. (в кириллице почему-то все на одной строке)
 
-(Примечание: *Markdown Here* разрывы строк ведут себя так же, как в [GFM](https://help.github.com/articles/github-flavored-markdown), поэтому не нужно вставлять по две новые строки.)
+(Примечание: В [Markdown Here](https://github.com/adam-p/markdown-here) разрывы строк ведут себя так же, как в [GFM](https://help.github.com/articles/github-flavored-markdown), поэтому не нужно вставлять по две новые строки.)
 
 <a name="videos"/>
 ## Видео Youtube
