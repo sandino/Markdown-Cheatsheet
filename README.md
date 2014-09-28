@@ -374,7 +374,7 @@ ___
 <a name="videos"/>
 ## Видео Youtube
 
-Ролики нельзя вставить напрямую, но может вставить изображение со ссылкой на видео, например:
+Ролики нельзя вставить напрямую, но можно вставить изображение со ссылкой на видео, например:
 
 ```no-highlight
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ID_ВИДЕОРОЛИКА_НА_YOUTUBE" target="_blank"><img src="http://img.youtube.com/vi/ID_ВИДЕОРОЛИКА_НА_YOUTUBE/0.jpg" 
