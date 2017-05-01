@@ -163,10 +163,10 @@ Alt-H2
 ```no-highlight
 Вот наш логотип (наведите указатель, чтобы увидеть текст заголовка):
 
-Код в строке: 
+Внутри строки:  
 ![alt-текст](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 1")
 
-Reference-style: 
+В сноске:  
 ![alt-текст][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 2"
@@ -174,10 +174,10 @@ Reference-style:
 
 Вот наш логотип (наведите указатель, чтобы увидеть текст заголовка):
 
-Адрес в строке: 
+Внутри строки:  
 ![alt-текст](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 1")
 
-Адрес в ссылке: 
+В сноске:  
 ![alt-текст][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Текст заголовка логотипа 2"
